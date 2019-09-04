@@ -1,0 +1,17 @@
+config:
+  target: 'http://localhost:5000'
+  phases:
+    - duration: 60
+      arrivalRate: 20
+  defaults:
+    headers:
+      x-my-service-auth: 'foo'
+      x-myobapi-requestid: 'bar'
+scenarios:
+  - flow:
+    - get:
+        url: "/12345/quote/load_sale_quote_list"
+    - get:
+        url: "/12345/quote/filter_sale_quote_list"
+    - get:
+        url: "/12345/quote/load_quote_detail/9876"

@@ -1,0 +1,1714 @@
+[
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/quote/load_sale_quote_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/quote/filter_sale_quote_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/quote/load_quote_detail/:quoteId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/quote/load_new_service_quote"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/quote/load_duplicate_service_quote/:duplicatedQuoteId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/quote/load_new_item_quote"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/quote/load_duplicate_item_quote/:duplicatedQuoteId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/quote/create_service_quote"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/quote/create_item_quote"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/quote/update_service_quote_detail/:quoteId"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/quote/update_item_quote/:quoteId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/quote/delete_quote_detail/:quoteId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/quote/calculate_item_quote_totals/update_line_item"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/quote/calculate_item_quote_totals/update_line_tax_code"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/quote/calculate_item_quote_totals/update_tax_inclusive"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/quote/calculate_item_quote_totals/update_line_amounts"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/quote/calculate_item_quote_totals/remove_line"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/quote/calculate_service_quote_detail_totals"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/quote/load_contact_address/:contactId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoice/load_invoice_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoice/filter_invoice_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoice/load_new_invoice_service_detail"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoice/load_new_invoice_service_detail_from_quote/:quoteId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoice/load_new_duplicate_invoice_service_detail/:duplicatedInvoiceId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/invoice/create_invoice_service_detail"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoice/load_invoice_detail/:invoiceId"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/invoice/update_invoice_service_detail/:invoiceId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/invoice/delete_invoice_detail/:invoiceId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoice/load_contact_address/:contactId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/invoice/calculate_invoice_service_detail_totals"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/invoice/update_invoice_item_detail/:invoiceId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/invoice/create_invoice_item_detail"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoice/load_new_invoice_item_detail"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoice/load_new_invoice_item_detail_from_quote/:quoteId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoice/load_new_duplicate_invoice_item_detail/:duplicatedInvoiceId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/invoice/calculate_invoice_item_totals/change_tax_inclusive"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/invoice/calculate_invoice_item_totals/change_line_tax_code"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/invoice/calculate_invoice_item_totals/remove_line"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/invoice/calculate_invoice_item_totals/change_line_amount"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/invoice/calculate_invoice_item_totals/change_line_item"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/invoice/send_invoice_email/:invoiceId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_employee_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/filter_employee_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_new_employee"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_employee/:employeeId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/employee/create_employee"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/employee/update_employee/:employeeId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/employee/delete_employee/:employeeId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_new_deduction_pay_item"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_deduction_pay_item/:deductionId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/employee/create_new_deduction_pay_item"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/employee/update_deduction_pay_item/:deductionId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_new_wage_pay_item"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_wage_pay_item/:wageId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/employee/create_new_wage_pay_item"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/employee/update_wage_pay_item/:wageId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_new_super_fund"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_abn/:abn"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/employee/create_super_fund"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_super_pay_item_detail/:superPayItemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_new_super_pay_item_detail"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/employee/create_super_pay_item_detail"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/employee/update_super_pay_item_detail/:superPayItemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_leave_pay_item/:leavePayItemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_new_leave_pay_item"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/employee/create_new_leave_pay_item"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/employee/update_leave_pay_item/:leavePayItemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/employee/load_standard_pay_wage_amount_rule/:payItemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoicePayment/load_new_invoice_payment"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoicePayment/load_invoice_list/:customerId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/invoicePayment/load_invoice_payment/:invoicePaymentId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/invoicePayment/create_invoice_payment"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/invoicePayment/update_invoice_payment/:invoicePaymentId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/invoicePayment/delete_invoice_payment/:invoicePaymentId"
+    },
+    {
+        "methods": [
+            "GET",
+            "GET"
+        ],
+        "path": "/:businessId/bill/filter_bill_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bill/load_bill_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bill/load_bill_detail/:billId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bill/load_new_bill_service_detail"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bill/load_new_bill_item_detail"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bill/create_bill_service_detail"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bill/create_bill_item_detail"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/bill/update_bill_service_detail/:billId"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/bill/update_bill_item_detail/:billId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/bill/delete_bill_detail/:billId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bill/calculate_bill_detail_totals"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bill/load_contact_address/:contactId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bill/calculate_bill_item_totals/change_line_tax_code"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bill/calculate_bill_item_totals/remove_line"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bill/calculate_bill_item_totals/change_tax_inclusive"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bill/calculate_bill_item_totals/change_line_amount"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bill/calculate_bill_item_totals/change_line_item"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/supplierReturn/filter_supplier_return_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/supplierReturn/load_supplier_return_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/superFund/load_new_super_fund"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/superFund/load_super_fund/:superFundId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/superFund/load_abn/:abn"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/superFund/create_super_fund"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/superFund/update_super_fund/:superFundId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/superFund/delete_super_fund/:superFundId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payItem/load_deduction_pay_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payItem/sort_deduction_pay_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payItem/load_expense_pay_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payItem/sort_expense_pay_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payItem/load_leave_pay_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payItem/sort_leave_pay_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payItem/load_superannuation_pay_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payItem/sort_superannuation_pay_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payItem/load_wage_pay_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payItem/sort_wage_pay_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/superPayItem/load_super_pay_item_detail/:superPayItemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/superPayItem/load_new_super_pay_item_detail"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/superPayItem/create_super_pay_item_detail"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/superPayItem/update_super_pay_item_detail/:superPayItemId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/superPayItem/delete_super_pay_item_detail/:superPayItemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/wagePayItem/load_new_wage_pay_item"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/wagePayItem/load_wage_pay_item/:wageId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/wagePayItem/create_new_wage_pay_item"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/wagePayItem/update_wage_pay_item/:wageId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/wagePayItem/delete_wage_pay_item/:wageId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/taxPayItem/load_tax_pay_item/"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/taxPayItem/update_tax_pay_item/"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/deductionPayItem/load_new_deduction_pay_item"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/deductionPayItem/load_deduction_pay_item/:deductionId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/deductionPayItem/create_new_deduction_pay_item"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/deductionPayItem/update_deduction_pay_item/:deductionId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/deductionPayItem/delete_deduction_pay_item/:deductionId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/leavePayItem/load_leave_pay_item/:leavePayItemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/leavePayItem/load_new_leave_pay_item"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/leavePayItem/create_new_leave_pay_item"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/leavePayItem/update_leave_pay_item/:leavePayItemId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/leavePayItem/delete_leave_pay_item/:leavePayItemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/expensePayItem/load_expense_pay_item/:expensePayItemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/expensePayItem/load_new_expense_pay_item"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/expensePayItem/create_expense_pay_item"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/expensePayItem/update_expense_pay_item/:expensePayItemId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/expensePayItem/delete_expense_pay_item/:expensePayItemId"
+    },
+    {
+        "methods": [
+            "GET",
+            "GET"
+        ],
+        "path": "/:businessId/bankingRule/load_banking_rule_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankingRule/filter_banking_rule_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankingRule/load_new_banking_rule_spend_money"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankingRule/load_banking_rule_spend_money/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bankingRule/create_banking_rule_spend_money"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/bankingRule/update_banking_rule_spend_money/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/bankingRule/delete_banking_rule_spend_money/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankingRule/load_new_banking_rule_receive_money"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankingRule/load_banking_rule_receive_money/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bankingRule/create_banking_rule_receive_money"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/bankingRule/update_banking_rule_receive_money/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/bankingRule/delete_banking_rule_receive_money/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankingRule/load_new_banking_rule_invoice"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankingRule/load_banking_rule_invoice/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bankingRule/create_banking_rule_invoice"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/bankingRule/update_banking_rule_invoice/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/bankingRule/delete_banking_rule_invoice/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankingRule/load_new_banking_rule_bill"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankingRule/load_banking_rule_bill/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bankingRule/create_banking_rule_bill"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/bankingRule/update_banking_rule_bill/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/bankingRule/delete_banking_rule_bill/:bankingRuleId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payRun/start_new_pay_run"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payRun/load_employee_pays"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/contact/load_contact_detail/:contactId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/contact/load_new_contact_detail"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/contact/create_contact"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/contact/update_contact_detail/:contactId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/contact/delete_contact/:contactId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/contact/load_contact_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/contact/filter_contact_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/health/heartbeat"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/health/ready"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/linkedAccounts/load_linked_accounts"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/linkedAccounts/update_linked_accounts"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/load_bank_transactions"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/filter_bank_transactions"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/banking/allocate_bank_transaction"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/banking/bulk_allocate_bank_transactions"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/banking/unallocate_bank_transaction"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/banking/bulk_unallocate_bank_transactions"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/banking/create_split_allocation"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/load_split_allocation/spend_money/:spendMoneyId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/load_split_allocation/receive_money/:receiveMoneyId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/load_match_transactions"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/filter_match_transactions"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/banking/save_match_transaction"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/load_payment/bill/:billPaymentId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/load_payment/invoice/:invoicePaymentId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/load_new_payment/bill"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/load_new_payment/invoice"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/banking/allocate_payment"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/banking/load_transfer_money/:transferMoneyId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/banking/create_transfer_money"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/banking/fetch_bank_transactions"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/billPayment/load_new_bill_payment"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/billPayment/load_bill_list/:supplierId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/billPayment/load_bill_payment/:billPaymentId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/billPayment/get_reference_id"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/billPayment/create_bill_payment"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/billPayment/update_bill_payment/:billPaymentId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/billPayment/delete_bill_payment/:billPaymentId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/applyToSale/load_new_apply_to_sale/:customerReturnId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/applyToSale/load_apply_to_sale/:applyToSaleId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/applyToSale/load_invoices/:customerId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/applyToSale/create_apply_to_sale"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/applyToSale/delete_apply_to_sale/:applyToSaleId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankReconciliation/load_bank_reconciliation"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/bankReconciliation/accounts/:accountId/filter_bank_reconciliation"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bankReconciliation/accounts/:accountId/create_bank_reconciliation"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/bankReconciliation/accounts/:accountId/undo_bank_reconciliation"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/spendMoney/load_new_spend_money"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/spendMoney/create_spend_money"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/spendMoney/calculate_totals"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/spendMoney/get_reference_id"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/spendMoney/load_spend_money_detail/:spendMoneyId"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/spendMoney/update_spend_money_detail/:spendMoneyId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/spendMoney/delete_spend_money_detail/:spendMoneyId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/receiveMoney/load_new_receive_money"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/receiveMoney/create_receive_money"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/receiveMoney/update_receive_money_detail/:receiveMoneyId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/receiveMoney/calculate_totals"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/receiveMoney/load_receive_money_detail/:receiveMoneyId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/receiveMoney/delete_receive_money_detail/:receiveMoneyId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/transferMoney/load_transfer_money_detail/:transferMoneyId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/transferMoney/create_transfer_money"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/transferMoney/load_new_transfer_money"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/transferMoney/delete_transfer_money/:transferMoneyId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/generalJournal/load_general_journal_detail/:generalJournalId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/generalJournal/load_new_general_journal_detail"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/generalJournal/create_general_journal_detail"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/generalJournal/update_general_journal_detail/:generalJournalId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/generalJournal/delete_general_journal_detail/:generalJournalId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/generalJournal/calculate_totals"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/user/load_user_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/user/sort_user_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/user/load_new_user"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/user/load_new_advisor"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/user/load_user/:userId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/user/create_user"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/user/update_user/:userId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/user/delete_user/:userId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/inventory/load_new_item"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/inventory/load_item/:itemId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/inventory/create_item"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/inventory/update_item/:itemId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/inventory/delete_item/:itemId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/inventory/load_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/inventory/filter_item_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/transactions/load_transaction_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/transactions/filter_transaction_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payrollSettings/load_super_fund_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payrollSettings/filter_super_fund_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payrollSettings/load_employment_classification_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payrollSettings/filter_employment_classification_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payrollSettings/load_new_employment_classification_detail"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payrollSettings/load_employment_classification_detail/:employmentClassificationId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/payrollSettings/create_employment_classification"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/payrollSettings/update_employment_classification/:employmentClassificationId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/payrollSettings/delete_employment_classification/:employmentClassificationId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/settlePurchaseReturn/load_new_settle_purchase_return/:purchaseReturnId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/settlePurchaseReturn/load_purchases_list"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/settlePurchaseReturn/save_settle_purchase_return"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/settlePurchaseReturn/load_settle_purchase_return/:settlePurchaseReturnId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/settlePurchaseReturn/delete_settle_purchase_return/:settlePurchaseReturnId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payRefund/load_new_pay_refund/:saleReturnId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payRefund/load_pay_refund/:payRefundId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/payRefund/create_pay_refund"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/payRefund/delete_pay_refund/:payRefundId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/payRefund/get_reference_id"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/inTray/load_in_tray"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/inTray/filter_in_tray_list"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/inTray/generate_in_tray_email"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/incomeAllocation/load_income_allocation"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/incomeAllocation/update_income_allocation"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/customerReturn/filter_customer_return_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/customerReturn/load_customer_return_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/receiveRefund/load_new_receive_refund/:supplierReturnId"
+    },
+    {
+        "methods": [
+            "POST"
+        ],
+        "path": "/:businessId/receiveRefund/create_receive_refund"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/receiveRefund/load_receive_refund/:refundId"
+    },
+    {
+        "methods": [
+            "DELETE"
+        ],
+        "path": "/:businessId/receiveRefund/delete_receive_refund/:refundId"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/salesSettings/load_sales_settings"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/salesSettings/update_sales_settings"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/salesSettings/update_email_settings"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/tax/load_tax_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/navigation/load_navigation_config"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/business/load_business_list"
+    },
+    {
+        "methods": [
+            "GET"
+        ],
+        "path": "/:businessId/business/load_business_details"
+    },
+    {
+        "methods": [
+            "PUT"
+        ],
+        "path": "/:businessId/business/update_business_details"
+    }
+]
