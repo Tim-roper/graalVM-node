@@ -1,0 +1,21 @@
+All virtual users finished
+Summary report @ 11:26:01(+1000) 2019-09-05
+  Scenarios launched:  1200
+  Scenarios completed: 936
+  Requests completed:  4741
+  RPS sent: 26.29
+  Request latency:
+    min: 27.1
+    max: 93375.8
+    median: 18008.9
+    p95: 54199.5
+    p99: 81021
+  Scenario counts:
+    0: 1200 (100%)
+  Codes:
+    200: 4676
+    500: 65
+  Errors:
+    ECONNRESET: 3
+    ESOCKETTIMEDOUT: 261
+
