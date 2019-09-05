@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "artillery": "^1.6.0-28"
+  },
+  "scripts": {
+    "load-test": "artillery run test-artillery-config.yml"
+  }
+}
