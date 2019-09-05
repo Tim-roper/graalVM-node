@@ -10,6 +10,8 @@
 
 ### Setup
 
+1. install GraalVM
+
 ### Configuration
 
 ## Approach/Methodology
