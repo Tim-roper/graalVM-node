@@ -14,4 +14,124 @@ scenarios:
     - get:
         url: "/12345/quote/filter_sale_quote_list"
     - get:
-        url: "/12345/quote/load_quote_detail/9876"
+        url: "/1234/quote/load_new_service_quote"
+    - delete:
+        url: "/1234/quote/delete_quote_detail/6543"
+    - post:
+        url: "/123456/employee/create_employee"
+        json:
+            contactDetail:
+              employeeNumber: '0012'
+              isInactive: false
+              lastName: The builder
+              firstName: Bob
+              notes: don't trust spuck
+              suburb: Otherland
+              country: Australia
+              email: bob@thebuilder.com
+              phoneNumbers:
+              - 03 93883848
+              - 03 94839483
+              postcode: '3456'
+              state: VIC
+              address: 43 ABC lane
+            payrollDetails:
+              employmentDetails:
+                dateOfBirth: '1978-03-13'
+                gender: Male
+                startDate: '2003-03-13'
+                terminationDate: ''
+                employmentBasis: Individual
+                employmentCategory: Permanent
+                employmentStatus: FullTime
+                paySlipDelivery: ToBeEmailed
+                paySlipEmail: bob@thebuilder.com
+              deductionDetails:
+                deductionPayItems:
+                - id: '1'
+                  type: DeductionPayrollCategory
+              superannuationDetails:
+                selectedSuperFundId: '1'
+                employeeMembershipNumber: '123'
+                allocatedPayItems:
+                - id: '1'
+                  name: Super 1
+                  type: SuperannuationDeductionBeforeTaxPayrollCategory
+                  displayType: Deduct before tax
+              leave:
+                allocatedPayItems:
+                - payItemId: 87
+                  type: SickLeaveAccrual
+                  carryOver: '43'
+                - payItemId: 89
+                  type: AnnualLeave
+                  carryOver: '23'
+              tax:
+                extraTax: '10.20'
+                taxFileNumber: 123 123 123
+                taxTableId: '4'
+                totalRebates: '12.12'
+                withholdingVariationRate: '23.1234'
+                taxPayItems:
+                - id: '34'
+                  type: TaxPayrollCategory
+              wage:
+                selectedPayBasis: Salary
+                annualSalary: '38000000000'
+                hourlyRate: '100000'
+                selectedPayCycle: Monthly
+                payPeriodHours: '152.0'
+                selectedWageExpenseAccount: '2'
+                allocatedWagePayItems:
+                - id: '2'
+                  type: WagesPayrollCategory
+              employerExpenseDetails:
+                expensePayItems:
+                - id: '1'
+                  type: NewExpenseWithEverything
+                - id: '2'
+                  type: WorkCover
+              leaveDetails:
+                allocatedLeavePayItems:
+                - payItemId: 87
+                  type: EntitlementPayrollCategory
+                  carryOver: '43'
+                - payItemId: 89
+                  type: EntitlementPayrollCategory
+                  carryOver: '23'
+              standardPayDetails:
+                description: With great power comes great responsibility
+                standardPayItems:
+                - id: '1'
+                  payItemId: '12'
+                  payItemType: WagesPayrollCategory
+                  hours: '5'
+                  amount: '100.00'
+              payHistoryDetails:
+                payHistoryItems:
+                - id: '1'
+                  payItemId: '11'
+                  payItemType: WagesPayrollCategory
+                  lines:
+                  - adjustment: 2500.5
+                    month: July
+                  - adjustment: 2500
+                    month: August
+            paymentDetails:
+              paymentMethod: Electronic
+              bankStatementText: SALARY
+              splitPayBetween: '2'
+              bankAccounts:
+              - bsbNumber: 123-321
+                accountNumber: '32321234'
+                accountName: Bob The builder
+                value: Dollars
+                amount: '1000000.00'
+                id: '33'
+              - bsbNumber: 323-232
+                accountNumber: 098765454
+                accountName: Not Bob The builder
+                value: Percent
+                amount: '0.00'
+            
+
