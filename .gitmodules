@@ -1,0 +1,3 @@
+[submodule "sme-web-bff"]
+	path = sme-web-bff
+	url = git@github.com:MYOB-Technology/sme-web-bff.git
